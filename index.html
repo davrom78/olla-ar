@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mira la Nueva Olla de Presión en tu cocina | Royal Prestige</title>
+<meta name="description" content="Abre la cámara de tu celular y ve la Nueva Olla de Presión Royal Prestige de 10 L sobre tu estufa, a tamaño real.">
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+<style>
+  :root{--rojo:#b3122a;--rojo2:#8e0d20;--crema:#faf6f0;--tinta:#222;--gris:#666}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Georgia,"Times New Roman",serif;background:var(--crema);color:var(--tinta);line-height:1.5}
+  .wrap{max-width:720px;margin:0 auto;padding:24px 18px 40px}
+  .kicker{font-family:Arial,sans-serif;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--rojo);text-align:center}
+  h1{font-size:30px;line-height:1.2;text-align:center;margin:8px 0 6px}
+  .sub{font-size:19px;text-align:center;color:var(--gris);margin-bottom:18px}
+  .visor{position:relative;width:100%;height:62vh;min-height:380px;max-height:620px;border-radius:22px;overflow:hidden;
+         background:radial-gradient(circle at 50% 40%,#fff 0%,#efe8de 75%);box-shadow:0 10px 30px rgba(0,0,0,.08)}
+  model-viewer{width:100%;height:100%;--poster-color:transparent}
+  .medida{position:absolute;top:14px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,.92);
+          font-family:Arial,sans-serif;font-size:14px;padding:6px 14px;border-radius:30px;white-space:nowrap;color:#333}
+  .btn-ar{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);width:88%;max-width:420px;
+          background:var(--rojo);color:#fff;border:0;border-radius:60px;padding:20px 18px;
+          font-family:Arial,sans-serif;font-size:22px;font-weight:bold;box-shadow:0 8px 22px rgba(179,18,42,.4);cursor:pointer}
+  .btn-ar:active{background:var(--rojo2)}
+  .btn-ar small{display:block;font-size:14px;font-weight:normal;opacity:.9;margin-top:2px}
+  .gira{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);font-family:Arial,sans-serif;font-size:15px;
+        background:rgba(255,255,255,.92);padding:8px 16px;border-radius:30px;color:#444;display:none}
+  .pasos{background:#fff;border-radius:18px;padding:20px 18px;margin-top:22px;box-shadow:0 4px 16px rgba(0,0,0,.05)}
+  .pasos h2{font-size:22px;margin-bottom:12px}
+  .pasos ol{list-style:none;counter-reset:p}
+  .pasos li{counter-increment:p;position:relative;padding-left:46px;margin-bottom:14px;font-size:18px}
+  .pasos li::before{content:counter(p);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;
+        background:var(--rojo);color:#fff;font-family:Arial,sans-serif;font-weight:bold;display:flex;align-items:center;justify-content:center}
+  .tip{font-size:16px;color:var(--gris);border-top:1px solid #eee;padding-top:12px}
+  .escritorio{display:none;text-align:center;background:#fff;border-radius:18px;padding:20px;margin-top:22px}
+  .escritorio img{width:180px;height:180px;margin:12px auto 6px;display:block}
+  .error{display:none;background:#fff3f3;border:1px solid #f1c4c4;border-radius:14px;padding:14px;margin-top:16px;font-size:17px}
+  .cta{display:block;text-align:center;margin:26px auto 0;max-width:420px;background:#222;color:#fff;text-decoration:none;
+       font-family:Arial,sans-serif;font-size:19px;font-weight:bold;padding:18px;border-radius:60px}
+  .es-escritorio .gira{display:block}
+  .es-escritorio .escritorio{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">Royal Prestige · Nueva Olla de Presión 10 L</p>
+  <h1>Mírala sobre tu estufa,<br>a tamaño real</h1>
+  <p class="sub">Usa la cámara de tu celular. No necesitas descargar nada.</p>
+
+  <div class="visor">
+    <model-viewer id="olla"
+      src="olla_presion_10L.glb"
+      alt="Olla de presión Royal Prestige de 10 litros con tapa de 5 mecanismos de seguridad"
+      ar
+      ar-modes="scene-viewer webxr quick-look"
+      ar-scale="fixed"
+      ar-placement="floor"
+      camera-controls
+      touch-action="pan-y"
+      auto-rotate
+      auto-rotate-delay="1500"
+      rotation-per-second="18deg"
+      camera-orbit="35deg 70deg auto"
+      interaction-prompt="none"
+      environment-image="neutral"
+      tone-mapping="neutral"
+      exposure="1.05"
+      shadow-intensity="1"
+      shadow-softness="0.8">
+      <button slot="ar-button" class="btn-ar">📱 Ver en mi cocina<small>Se abre la cámara</small></button>
+    </model-viewer>
+    <div class="medida">Tamaño real: 41 cm de ancho · 31 cm de alto</div>
+    <div class="gira">👆 Arrastra para girarla · rueda para acercar</div>
+  </div>
+
+  <div class="error" id="error">
+    Tu celular no pudo abrir la cámara en modo realidad aumentada. Prueba abrir esta página en <b>Safari</b> (iPhone) o <b>Chrome</b> (Android). Mientras tanto, puedes girar la olla con el dedo.
+  </div>
+
+  <div class="pasos">
+    <h2>Así de fácil:</h2>
+    <ol>
+      <li>Toca el botón rojo <b>“Ver en mi cocina”</b> y permite usar la cámara.</li>
+      <li>Apunta a tu estufa y <b>mueve el celular despacio</b> de lado a lado hasta que reconozca la superficie.</li>
+      <li>Toca la pantalla o <b>arrastra la olla</b> hasta la hornilla. Aparece a su tamaño real.</li>
+      <li>Camina alrededor y acércate: así se verá en tu cocina.</li>
+    </ol>
+    <p class="tip">💡 Consejo: prende la luz de la cocina. Funciona mejor en estufas con algo de textura o con un trapo encima que en una superficie negra muy brillante.</p>
+  </div>
+
+  <div class="escritorio">
+    <h2 style="font-size:21px">¿Estás en la computadora?</h2>
+    <p style="font-size:17px">Escanea este código con la cámara de tu celular para verla sobre tu estufa.</p>
+    <img id="qr" alt="Código QR para abrir esta página en el celular">
+  </div>
+
+  <a class="cta" href="https://presion.drcc.online">Quiero conocer la Nueva Olla de Presión</a>
+</div>
+
+<script>
+  const mv = document.getElementById('olla');
+  const esCel = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+                (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  if (!esCel) {
+    document.body.classList.add('es-escritorio');
+    document.getElementById('qr').src =
+      'https://api.qrserver.com/v1/create-qr-code/?size=360x360&margin=8&data=' + encodeURIComponent(location.href);
+  }
+  mv.addEventListener('ar-status', (e) => {
+    if (e.detail.status === 'failed') document.getElementById('error').style.display = 'block';
+  });
+  mv.addEventListener('load', () => {
+    if (esCel && !mv.canActivateAR) {
+      document.getElementById('error').style.display = 'block';
+      document.querySelector('.gira').style.display = 'block';
+    }
+  });
+</script>
+</body>
+</html>
