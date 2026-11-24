@@ -5,3 +5,4 @@ Se llega desde el botón "Mira la olla en tu cocina" en presion.drcc.online.
 - Modelo: olla_presion_10L.glb (Draco, metros, 41x31 cm). Fuente en Documents\Olla3D.
 ## Bitácora
 - 2026-11-24: creado repo, página inicial y vercel.json.
+- 2026-11-24: preview-presion/ = vista previa versión clara de presion.drcc.online (base href a presion.drcc.online; noindex).
